@@ -16,7 +16,7 @@ en este repositorio encontrará los archivos de configuración necesarios para d
     - Vagrant
     - Oracle VirtualBox
 ### Sistemas Operativos: 
-    - Centos 8
+    - Centos 7.9
 ### Servicios a implementar:
     - Firewall
     - FTP
