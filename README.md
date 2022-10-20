@@ -24,3 +24,4 @@ en este repositorio encontrará los archivos de configuración necesarios para d
     - HTTPS
 ### Estructura planteada:
 
+![ArquitecturaProyecto](Arquitectura.png)
