@@ -27,7 +27,8 @@ en este repositorio encontrará los archivos de configuración necesarios para d
 
 ### Vagrantfile:
 
-bash```
+```bash
+
 Vagrant.configure("2") do |config|
 config.vm.define :vmftp do |vmftp|
 vmftp.vm.box = "bento/centos-7.9"
