@@ -15,7 +15,7 @@ un servicio Firewall el cual, a través de este la máquina anfitrión podrá ac
     - Vagrant
     - Oracle VirtualBox
 ### Sistemas Operativos: 
-    - Centos 7.9
+    - KaliLinux
 ### Servicios a implementar:
     - Firewall
     - FTP
@@ -28,23 +28,20 @@ un servicio Firewall el cual, a través de este la máquina anfitrión podrá ac
 
 ```bash
 Vagrant.configure("2") do |config|
-if Vagrant.has_plugin?("vagrant-vbguest")
-    config.vbguest.auto_update = false  
-  end
 config.vm.define :vmftp do |vmftp|
-vmftp.vm.box = "centos/stream8"
+vmftp.vm.box = "kalilinux/rolling"
 vmftp.vm.network :private_network, ip: "192.168.50.2"
 vmftp.vm.hostname = "vmftp"
 end
 
 config.vm.define :vmhttp do |vmhttp|
-vmhttp.vm.box = "centos/stream8"
+vmhttp.vm.box = "kalilinux/rolling"
 vmhttp.vm.network :private_network, ip: "192.168.50.3"
 vmhttp.vm.hostname = "vmhttp"
 end
 
 config.vm.define :firewall do |firewall|
-firewall.vm.box = "centos/stream8"
+firewall.vm.box = "kalilinux/rolling"
 firewall.vm.network :public_network, ip: "192.168.1.100"
 firewall.vm.network :private_network, ip: "192.168.50.4"
 firewall.vm.network :"forwarded_port", guest: 80, host: 5000,auto_correct: true
