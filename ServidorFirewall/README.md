@@ -4,6 +4,7 @@
 
 
 ```bash
+sudo -i
 service firewalld start
 service NetworkManager stop
 chkconfig NetworkManager off
