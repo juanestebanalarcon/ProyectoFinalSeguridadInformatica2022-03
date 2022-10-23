@@ -2,7 +2,7 @@
 
 ### Instalación de dependencias:
 
-bash```
+```bash
 sudo -i
 apt install apacha2 nano net-tools -y
 service apache2 restart / start / status / stop

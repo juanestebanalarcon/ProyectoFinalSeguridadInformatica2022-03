@@ -2,7 +2,7 @@
 
 ### Instalación de dependencias:
  
-bash```
+```bash
 sudo -i
 apt install nano net-tools vsftpd -y
 service vsftpd start / restart / stop / status
