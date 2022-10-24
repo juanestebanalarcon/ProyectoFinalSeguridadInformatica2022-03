@@ -14,6 +14,8 @@ un servicio Firewall el cual, a través de la máquina anfitrión podrá acceder
 ### Tecnologías:
     - Vagrant
     - Oracle VirtualBox
+    - Apache2 (HTTP)
+    - Firewalld
 ### Sistemas Operativos: 
     - KaliLinux
 ### Servicios a implementar:
