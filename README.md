@@ -8,7 +8,7 @@
 
 ## Sobre el proyecto:
 
-Este proyecto está enfocado a la implementación de un firewall utilizando Centos 7.9 como distribución, en ese orden de ideas, se implementará 
+Este proyecto está enfocado a la implementación de un firewall utilizando KaliLinux como distribución, en ese orden de ideas, se implementará 
 un servicio Firewall el cual, a través de la máquina anfitrión podrá acceder a un servicio FTP y una página web a través de un servicio HTTP, los servicios antes mencionados estarán alojados en dos máquinas independientes respectivamente, en este repositorio encontrará los archivos de configuración necesarios para desarrollar dicho proyecto, presentación y video demostrativo.
 
 ### Tecnologías:
